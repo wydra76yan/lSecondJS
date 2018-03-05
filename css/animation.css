@@ -1,0 +1,51 @@
+/*line beetween*/
+#wrapper{
+    position: relative;
+    width:100%;
+    min-height:55vw;
+    overflow: hidden;
+}
+/*just in nedd*/
+.layer{
+    position: absolute;
+    width:100vw;
+    min-height: 55vw;
+    overflow: hidden;
+}
+/*just in nedd*/
+.layer .content-wrap{
+    position: absolute;
+    width:100vw;
+    min-height: 55vw;
+}
+/*text*/
+.layer .content-body{
+    width:25%;
+    position:absolute;
+    top:50%;
+    text-align: center;
+    transform:translateY(-50%);
+    color:#fff;
+}
+/*for imahe regulation*/
+.layer img{
+    position: absolute;
+    width:100%;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+
+.skewed .top{
+    transform: skew(-30deg);
+    margin-left:-1000px;
+    width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap{
+    transform: skew(30deg);
+    margin-left:1000px;
+}
+
+
