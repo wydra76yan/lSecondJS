@@ -1,11 +1,11 @@
 let i = 0;
 let images = [];
-let time = 5000;
+let time = 4000;
 let slide = document.getElementById('slide');
 
-images[0] = "images/FirstSliderImage.jpg";
-images[1] = "images/SecondSliderImage.jpg";
-images[2] = "images/ThirdSliderImage.jpg";
+images[0] = "../images/FirstSliderImage.jpg";
+images[1] = "../images/SecondSliderImage.jpg";
+images[2] = "../images/ThirdSliderImage.jpg";
 
 function changeImg(){
     //slide.classList.toggle('fadeIn');
@@ -16,10 +16,10 @@ function changeImg(){
         i = 0;
     }
     //setTimeout('slide.classList.toggle(\'fadeOut\')',2000);
-    slide.classList.toggle('fadeInLeft');
+    slide.classList.toggle('fadeOut');
     setTimeout("changeImg()", time);
 
 
 }
-//slide.classList.toggle('fadeInLeft');
+ slide.classList.toggle('fadeIn');
 window.onload=changeImg;
